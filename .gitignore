@@ -1,0 +1,17 @@
+node_modules/
+out/
+dist/
+data/
+backups/
+tmp/
+.tmp/
+.pnpm-store/
+*.log
+.DS_Store
+
+# 便携版运行时（89 MB，属于分发产物，不入库）
+runtime/
+# 首次运行标记
+.first-run-done
+# 分发压缩包，走 GitHub Releases
+*.zip

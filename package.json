@@ -1,0 +1,33 @@
+{
+  "name": "suji",
+  "productName": "速记",
+  "version": "1.0.0",
+  "description": "速记 · 个人备考记忆知识库（本地单机）",
+  "main": "./out/main/index.js",
+  "author": "速记",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build && node scripts/build-server.mjs",
+    "start": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "test": "node scripts/run-smoke.mjs",
+    "template": "node scripts/build-template.mjs"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "45.2.3",
+    "electron-vite": "^3.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
+  }
+}
